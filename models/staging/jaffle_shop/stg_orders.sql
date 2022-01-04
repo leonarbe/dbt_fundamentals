@@ -6,7 +6,7 @@ with orders as (
         order_date,
         status
 
-    from {{ source('JAFFLE_SHOP','ORDERS')}}
+    from {{ source('jaffle_shop','orders')}}
 )
 
 select *
