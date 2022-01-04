@@ -23,6 +23,9 @@ sources:
             tests: 
               - unique
               - not_null
+              - relationships:
+                  to: ref('stg_customers')
+                  field: customer_id
 
         #load_at_fields: etl_loaded_at
         #freshness:
